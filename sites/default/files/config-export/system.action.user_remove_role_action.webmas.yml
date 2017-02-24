@@ -1,0 +1,14 @@
+uuid: 7ac18658-3b27-4682-a668-384305873fc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webmas
+  module:
+    - user
+id: user_remove_role_action.webmas
+label: 'Remove the Webmaster role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webmas

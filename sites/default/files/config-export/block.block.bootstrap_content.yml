@@ -1,0 +1,35 @@
+uuid: 559da238-340a-465b-bfcb-dff8364dcb18
+langcode: fr
+status: true
+dependencies:
+  module:
+    - annonce
+    - block_visibility_groups
+    - system
+  theme:
+    - bootstrap
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: bootstrap_content
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  example_condition:
+    id: example_condition
+    module: session_test
+    negate: null
+    date_expiration: '2017-03-09'
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

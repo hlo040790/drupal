@@ -1,0 +1,30 @@
+uuid: 9626d7ee-075c-4c98-81d1-f913cec4a27c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - bartik
+id: categories
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:categories'
+settings:
+  id: 'system_menu_block:categories'
+  label: Categories
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

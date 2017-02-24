@@ -1,0 +1,21 @@
+uuid: 24c3465b-3043-481d-b496-5066b23abd4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_visite_guidee_descr
+    - paragraphs.paragraphs_type.paragraphe_video_
+  module:
+    - text
+id: paragraph.paragraphe_video_.field_visite_guidee_descr
+field_name: field_visite_guidee_descr
+entity_type: paragraph
+bundle: paragraphe_video_
+label: 'Visite guidée descr'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

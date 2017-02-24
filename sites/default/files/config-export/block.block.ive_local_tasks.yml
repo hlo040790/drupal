@@ -1,0 +1,29 @@
+uuid: 2a1cbbf7-de23-447a-a5fd-a202d0fda8ba
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+  theme:
+    - ive
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ive_local_tasks
+theme: ive
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,4 @@
+ma permission:
+  title: 'ma permission'
+  description: 'ma permission restrictions.'
+  restrict access: 'Access hello'

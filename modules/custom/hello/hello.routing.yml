@@ -1,0 +1,56 @@
+hello.hello:
+  path: '/hello/{param}'
+  defaults:
+    _title: 'Hello'
+    _controller: '\Drupal\hello\Controller\HelloController::content'
+    param: 'no parameter'
+  requirements:
+    _access: 'TRUE'
+
+hello_rss.hello:
+  path: '/hello_rss'
+  defaults:
+    _title: 'Hello rss'
+    _controller: '\Drupal\hello\Controller\HelloRssController::content'
+  requirements:
+    _access: 'TRUE'
+
+liste_noeud.hello:
+  path: '/hello/liste-noeuds'
+  defaults:
+    _title: 'liste noeuds'
+    _controller: '\Drupal\hello\Controller\ListeNoeudController::content'
+  requirements:
+    _access: 'TRUE'
+
+update_history.hello:
+  path: '/node/{node}/update-history'
+  defaults:
+    _title: 'update history'
+    _controller: '\Drupal\hello\Controller\UpdateHistoryController::content'
+  requirements:
+    _access: 'TRUE'
+
+hello.form:
+  path: '/hello/calcul-form'
+  defaults:
+    _title: 'calcul form'
+    _form: '\Drupal\hello\Form\HelloForm'
+  requirements:
+    _permission: 'access content'
+
+hello.admin:
+  path: '/admin/structure/hello/admin'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloAdminForm'
+    _title: 'Admin form'
+  requirements:
+    _permission: 'administer site configuration'
+
+hello.access:
+  path: '/hello-access'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloAccessCheckController::content'
+    _title: 'hello access'
+  requirements:
+    _access_hello: '24'

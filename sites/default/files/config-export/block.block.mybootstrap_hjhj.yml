@@ -1,0 +1,33 @@
+uuid: 329c66c3-0e62-47ca-a4f3-0b876b44a62d
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.test
+  content:
+    - 'block_content:basic:50d2b4fb-358a-4d1b-b834-133ba8551325'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - mybootstrap
+id: mybootstrap_hjhj
+theme: mybootstrap
+region: '-1'
+weight: -7
+provider: null
+plugin: 'block_content:50d2b4fb-358a-4d1b-b834-133ba8551325'
+settings:
+  id: 'block_content:50d2b4fb-358a-4d1b-b834-133ba8551325'
+  label: 'hjhj '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: test
+    context_mapping: {  }

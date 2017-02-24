@@ -1,0 +1,28 @@
+uuid: d645a5a8-780e-43ed-80eb-0a50f59cf121
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - webform
+  theme:
+    - myadminimal_theme
+id: webform_2
+theme: myadminimal_theme
+region: content
+weight: -1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Contacter l''agence'
+  provider: webform
+  label_display: visible
+  webform_id: contact
+  default_data: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

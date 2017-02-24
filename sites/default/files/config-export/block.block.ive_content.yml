@@ -1,0 +1,22 @@
+uuid: 1a352110-04bf-480a-81b4-b7e00c23816d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ive
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: ive_content
+theme: ive
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

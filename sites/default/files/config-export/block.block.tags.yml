@@ -1,0 +1,34 @@
+uuid: 693560c0-9d1a-4c28-bf1f-0469da3a310d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tags
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - bartik
+id: tags
+theme: bartik
+region: sidebar_first
+weight: -13
+provider: null
+plugin: 'facet_block:tags'
+settings:
+  id: 'facet_block:tags'
+  label: Tags
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/RechercheGlobale*'
+    negate: false
+    context_mapping: {  }

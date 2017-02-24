@@ -1,0 +1,14 @@
+.square {float: left;width: 50%;}
+
+.square:nth-child(1){
+	background-color: red;
+}
+.square:nth-child(2){
+	background-color: yellow;
+}
+.square:nth-child(3){
+	background-color: blue;
+}
+.square:nth-child(4){
+	background-color: green;
+}

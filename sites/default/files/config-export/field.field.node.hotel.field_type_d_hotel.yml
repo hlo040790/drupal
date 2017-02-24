@@ -1,0 +1,28 @@
+uuid: ace39386-5d14-426f-8dd2-c29726dbe4f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_d_hotel
+    - node.type.hotel
+    - taxonomy.vocabulary.types_d_hotel
+id: node.hotel.field_type_d_hotel
+field_name: field_type_d_hotel
+entity_type: node
+bundle: hotel
+label: 'Type d''hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      types_d_hotel: types_d_hotel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

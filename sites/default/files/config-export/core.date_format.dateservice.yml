@@ -1,0 +1,8 @@
+uuid: 9bcd4c1a-be8c-4ac5-ba32-f0d6c8c72f8f
+langcode: fr
+status: true
+dependencies: {  }
+id: dateservice
+label: dateService
+locked: false
+pattern: 'H\Hi s\s'

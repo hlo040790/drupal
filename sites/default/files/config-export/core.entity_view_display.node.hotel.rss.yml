@@ -1,0 +1,82 @@
+uuid: e7702d4f-6bc1-4453-a4b4-bfaa4c74c889
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.hotel.body
+    - field.field.node.hotel.field_emplacement
+    - field.field.node.hotel.field_image
+    - field.field.node.hotel.field_nombre_d_etoile
+    - field.field.node.hotel.field_par_video_hotel
+    - field.field.node.hotel.field_type_d_hotel
+    - field.field.node.hotel.field_video_hotel
+    - node.type.hotel
+    - responsive_image.styles.photos_hotel
+  module:
+    - geolocation
+    - responsive_image
+    - text
+    - user
+id: node.hotel.rss
+targetEntityType: node
+bundle: hotel
+mode: rss
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_emplacement:
+    weight: 0
+    label: above
+    settings:
+      set_marker: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        type: HYBRID
+        zoom: '10'
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        height: 400px
+        width: 100%
+        info_auto_display: 1
+        disableAutoPan: 1
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      use_overridden_map_settings: 0
+    third_party_settings: {  }
+    type: geolocation_map
+  field_image:
+    weight: 4
+    label: inline
+    settings:
+      responsive_image_style: photos_hotel
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+  field_nombre_d_etoile:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_par_video_hotel: true
+  field_type_d_hotel: true
+  field_video_hotel: true
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: 406cf2ef-1007-47b0-bc27-9cf0beba5fed
+langcode: en
+status: true
+dependencies: {  }
+name: 'Types d''Hôtel'
+vid: types_d_hotel
+description: ''
+hierarchy: 0
+weight: 0

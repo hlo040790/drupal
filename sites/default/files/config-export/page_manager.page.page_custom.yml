@@ -1,0 +1,12 @@
+uuid: f2524211-f68f-4b15-92af-5613cbffbe2d
+langcode: fr
+status: true
+dependencies: {  }
+id: page_custom
+label: 'page custom'
+description: ''
+use_admin_theme: false
+path: /page-custom
+access_logic: and
+access_conditions: {  }
+parameters: {  }

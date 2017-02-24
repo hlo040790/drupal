@@ -1,0 +1,37 @@
+uuid: 5c408b5d-69c5-4e38-88eb-e518b7761006
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:705277eb-3c77-42a1-970b-8538d27730de'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - mybootstrap
+id: bandeauheader
+theme: mybootstrap
+region: bandeau_header
+weight: -15
+provider: null
+plugin: 'block_content:705277eb-3c77-42a1-970b-8538d27730de'
+settings:
+  id: 'block_content:705277eb-3c77-42a1-970b-8538d27730de'
+  label: bandeau-header
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

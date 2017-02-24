@@ -1,0 +1,22 @@
+uuid: 4abe0adb-9b22-45d3-9239-8cf8e2429593
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: resaturant_alias
+label: 'Resaturant alias'
+type: 'canonical_entities:node'
+pattern: '/hotel/restaurant/[node:title]'
+selection_criteria:
+  61381de6-f263-4125-b49a-1c9f27268425:
+    id: node_type
+    bundles:
+      restaurant: restaurant
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 61381de6-f263-4125-b49a-1c9f27268425
+selection_logic: and
+weight: -5
+relationships: {  }

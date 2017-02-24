@@ -1,0 +1,6 @@
+services:
+  annonce.subscriber:
+    class: Drupal\annonce\EventSubscriber\AnnonceSubscriber
+    arguments: ['@current_user','@current_route_match','@database']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,23 @@
+uuid: 10785120-116e-4079-bb3a-6630ce45710c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_personnel
+    - field.storage.contact_message.field_6_twebs
+  module:
+    - link
+id: contact_message.contact_personnel.field_6_twebs
+field_name: field_6_twebs
+entity_type: contact_message
+bundle: contact_personnel
+label: '6 twebs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

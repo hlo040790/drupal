@@ -1,0 +1,26 @@
+uuid: 27369508-652a-4761-b06e-ca3a3e7fa27e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - language
+  theme:
+    - bartik
+id: languageswitcher
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

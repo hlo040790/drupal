@@ -1,0 +1,7 @@
+uuid: e531026d-5853-4ac9-be0e-b461c48ac686
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphe_video_
+label: 'Paragraphe Visite guidée '
+behavior_plugins: {  }

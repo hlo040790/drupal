@@ -1,0 +1,125 @@
+<?php
+
+/**
+ * @file
+ * Contains hello.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hello_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the hello module.
+        case 'help.page.hello':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Hello module for d8 developper training.') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function hello_cron() {
+// Logs an error
+    drupal_set_message('erreur cron ', 'error');
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function hello_user_login() {
+    $account = \Drupal::currentUser();
+    $username = $account->getAccountName();
+    //message d'erreur
+    drupal_set_message(t('Bienvenue ') .$username , 'status');
+}
+
+function hello_node_update() {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $nid = $node->id();
+    $username = \Drupal::currentUser()->id();
+    $database = \Drupal::database('user8');
+
+    $res = $database->insert('hello_node_history')
+        ->fields(array(
+            'update_time ' => time(),
+            'nid' => $nid,
+            'uid ' => $username))
+        ->execute();
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function hello_page_attachments(array &$page)
+{
+    $page['#attached']['library'][] = 'hello/base';
+}
+
+function hello_preprocess_html(&$variables) {
+    // Add information about the number of sidebars.
+
+
+    if (!empty($variables['page']['sidebar_first'])) {
+
+        $selectOption = \Drupal::config('hello.admin')->get('block-color');
+        switch ($selectOption) {
+            case $selectOption == 1:
+                $variables['attributes']['class'][] = 'color-block-vert';
+                break;
+            case $selectOption == 2:
+                $variables['attributes']['class'][] = 'color-block-orange';
+                break;
+            case $selectOption == 3:
+                $variables['attributes']['class'][] = 'color-block-blue';
+                break;
+            default:
+                // Something went wrong or form has been tampered.
+
+        }
+
+        return $variables;
+
+    }
+
+}
+
+function hello_theme($existing, $type, $theme, $path){
+    return array(
+        'hello' => array(
+            'template' =>'hello-node-history',
+            'variables'=> array('count' => Null,
+                                'node'  => Null
+            ),
+        ),
+    );
+
+}
+
+function hello_form_contact_message_contact_personnel_form_alter(&$form) {
+    //kint($form);
+    $form['certify'] = array(
+        '#type' => 'tel',
+        '#title' => t('Téléphone'),
+        '#required' => TRUE,
+        '#weight' => -1,
+    );
+
+    //unset($form['subject']);
+    $form['subject']['#access'] = FALSE;
+    $form['actions']['submit']['#value'] = t('Envoyer le message maintenant');
+
+    $form['name']['#weight'] = '1';
+    $form['mail']['#weight'] = '2';
+    $form['tel']['#weight'] = '3';
+    $form['message']['#weight'] = '4';
+    $form['submit']['#weight'] = '5';
+}
+

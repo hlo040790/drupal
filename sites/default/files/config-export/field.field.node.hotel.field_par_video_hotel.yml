@@ -1,0 +1,24 @@
+uuid: 7b4bf66d-7e4c-4ad5-96bc-3518cb35872e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_par_video_hotel
+    - node.type.hotel
+  module:
+    - entity_reference_revisions
+id: node.hotel.field_par_video_hotel
+field_name: field_par_video_hotel
+entity_type: node
+bundle: hotel
+label: 'Visite guidée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+field_type: entity_reference_revisions

@@ -1,0 +1,36 @@
+uuid: d8a516c4-e113-4deb-872c-97b108c07d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bloc_types_hotel
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - mybootstrap
+id: mybootstrap_views_block__bloc_types_hotel_block_1
+theme: mybootstrap
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:bloc_types_hotel-block_1'
+settings:
+  id: 'views_block:bloc_types_hotel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /hotels
+    negate: false
+    context_mapping: {  }

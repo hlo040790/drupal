@@ -1,0 +1,43 @@
+uuid: 9ffaf3d6-f5e7-46e2-9d96-6128d8248f5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphe_video_.field_visite_guidee_descr
+    - field.field.paragraph.paragraphe_video_.field_visite_guidee_image
+    - field.field.paragraph.paragraphe_video_.field_visite_guidee_titre
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.paragraphe_video_
+  module:
+    - image
+    - text
+id: paragraph.paragraphe_video_.default
+targetEntityType: paragraph
+bundle: paragraphe_video_
+mode: default
+content:
+  field_visite_guidee_descr:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_visite_guidee_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_visite_guidee_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,30 @@
+uuid: 46ffdd36-7d6e-46a2-b674-19987797ba11
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hotels
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__hotels_block_1
+theme: bartik
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'views_block:hotels-block_1'
+settings:
+  id: 'views_block:hotels-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,36 @@
+uuid: effaf3c0-915a-4aa8-a812-b98ec7c4e60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - ive
+id: ive_views_block__blog_block_1
+theme: ive
+region: sidebar_first
+weight: -14
+provider: null
+plugin: 'views_block:blog-block_1'
+settings:
+  id: 'views_block:blog-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/blog*'
+    negate: false
+    context_mapping: {  }

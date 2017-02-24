@@ -1,0 +1,26 @@
+uuid: 3b11e8f0-d48c-43e1-be80-f002ec411c8c
+langcode: fr
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - search
+  theme:
+    - bartik
+id: searchform
+theme: bartik
+region: '-1'
+weight: -12
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

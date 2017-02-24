@@ -1,0 +1,31 @@
+uuid: dcf2bdf2-3c3f-4d4b-9ce4-d33f452e38de
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:64d4df33-6372-43e9-9443-084846ba38cb'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - mybootstrap
+id: mybootstrap_drupal8
+theme: mybootstrap
+region: '-1'
+weight: -13
+provider: null
+plugin: 'block_content:64d4df33-6372-43e9-9443-084846ba38cb'
+settings:
+  id: 'block_content:64d4df33-6372-43e9-9443-084846ba38cb'
+  label: 'Drupal 8'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

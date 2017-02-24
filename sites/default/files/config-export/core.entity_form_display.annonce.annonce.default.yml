@@ -1,0 +1,38 @@
+uuid: 9bd5dbe6-ad26-431e-915e-68a5df1b5ffb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.annonce.annonce.field_image_annonce
+    - image.style.thumbnail
+  module:
+    - annonce
+    - image
+id: annonce.annonce.default
+targetEntityType: annonce
+bundle: annonce
+mode: default
+content:
+  field_image_annonce:
+    type: image_image
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

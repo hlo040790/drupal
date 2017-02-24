@@ -1,0 +1,32 @@
+excluded:
+  - block.block.ive_views_block__contenus_par_utilisateurs_block_1
+  - block.block.mybootstrap_views_block__contenus_par_utilisateurs_block_1
+  - block.block.views_block__contenus_par_utilisateurs_block_1
+  - block.block.ive_tags
+  - block.block.ive_views_block__blog_block_1
+  - block.block.ive_views_block__tags_in_blogs_block_1
+  - block.block.mybootstrap_tags
+  - block.block.mybootstrap_views_block__blog_block_1
+  - block.block.mybootstrap_views_block__tags_in_blogs_block_1
+  - block.block.tags
+  - block.block.views_block__blog_block_1
+  - block.block.views_block__tags_in_blogs_block_1
+  - paragraphs.paragraphs_type.paragraphe_video_
+  - field.field.node.article.comment
+  - language.content_settings.node.article
+  - core.entity_form_display.node.article.default
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.rss
+  - core.entity_view_display.node.article.search_index
+  - core.entity_view_display.node.article.search_result
+  - core.entity_view_display.node.article.teaser
+  - facets.facet.tags
+  - rdf.mapping.node.article
+  - image.style.max_325x325
+  - taxonomy.vocabulary.tags
+  - views.view.blog
+  - views.view.liste_noeuds
+  - views.view.recherche_globale
+  - views.view.tags_in_blogs
+  - views.view.test_match
+required: true

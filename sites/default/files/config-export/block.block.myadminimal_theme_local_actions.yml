@@ -1,0 +1,20 @@
+uuid: 32042aa5-3aac-434b-9f84-82408ee2c336
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - myadminimal_theme
+_core:
+  default_config_hash: ik4PTMlBD0MWansnSMpSXq5SUlWRJ1IVVt6C7AIbQmc
+id: myadminimal_theme_local_actions
+theme: myadminimal_theme
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

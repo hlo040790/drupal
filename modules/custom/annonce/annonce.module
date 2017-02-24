@@ -1,0 +1,39 @@
+<?php
+
+function annonce_theme($existing, $type, $theme, $path){
+    return array(
+        'annonce' => array(
+            'template' =>'annonce',
+            //'variables'=> array('content' => Null
+            'render element' => 'elements'
+            ),
+    );
+
+}
+
+/**
+ * Implements hook_template_preprocess_default_variables_alter().
+ */
+function template_preprocess_annonce(&$variables)
+{
+
+    $variables['content'] = [];
+    foreach (\Drupal\Core\Render\Element::children($variables['elements']) as $key) {
+        $variables['content'][$key] = $variables['elements'][$key];
+    }
+
+}
+
+function annonce_theme_suggestions_annonce(array $variables){
+
+    $suggestions = array();
+    $annonces = $variables['elements']['#annonce'];
+    //kint($annonces);
+    //$sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+    //$suggestions[] = 'annonce__' . $sanitized_view_mode;
+    //$suggestions[] = 'annonce__' . $annonce->bundle();
+    //$suggestions[] = 'annonce__' . $annonce->bundle() . '_' .$sanitized_view_mode;
+    $suggestions[] = 'annonce__' . $annonces->id();
+
+    return $suggestions;
+}

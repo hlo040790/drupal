@@ -1,0 +1,22 @@
+uuid: 5905e2dc-698e-4777-bae0-af8fe9b041fc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - myadminimal_theme
+_core:
+  default_config_hash: 8by5KRsb7ZpmjHj0ms1d7xAG_xH54AWsOX6spDLJ59U
+id: myadminimal_theme_breadcrumbs
+theme: myadminimal_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

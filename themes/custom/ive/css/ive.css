@@ -1,0 +1,47 @@
+/**********************header*************************/
+#header{
+	background-color: #fff;
+	background-image: none;
+}
+#page .site-branding__name a,h1,h2,h3{
+	color: #FFA500;
+	font-size:2rem;
+}
+.content .menu-item a{
+	color: #FFA500;
+}
+
+/**********************Naviguation********************/
+.region-primary-menu .menu a{
+	color: #FFA500;
+	border-radius:8px;
+	padding: 0.8em 1.8em;
+}
+.region-primary-menu .menu-item a.is-active {
+    background: #FFA500;
+    color: #fff;
+}
+/***********************content************************/
+.path-frontpage #content h2 a {
+	color: #FFA500;
+}
+/**********************sidebar*************************/
+.sidebar .block {
+    background-color:#fff;
+    border-color: #fff;
+}
+.region-sidebar-second h2,.region-sidebar-first h2{
+	border-bottom: 1px solid #FFA500;
+}
+.sidebar h2 {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+/**********************footer**************************/
+.node--type-article{
+	width: 100%;
+}
+.colone-blog{
+	width: 50%;
+    float: left;
+}

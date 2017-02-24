@@ -1,0 +1,28 @@
+uuid: 46d66c51-67a1-4b69-a6f3-cc99c9f5243a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emplacement
+    - node.type.hotel
+  module:
+    - geolocation
+id: node.hotel.field_emplacement
+field_name: field_emplacement
+entity_type: node
+bundle: hotel
+label: Emplacement
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    lat: '46'
+    lng: '4'
+    lat_sin: null
+    lat_cos: null
+    lng_rad: null
+    data: null
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

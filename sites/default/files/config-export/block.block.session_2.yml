@@ -1,0 +1,33 @@
+uuid: 80dc9e08-e953-4164-adaf-9ae0e202f8d7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - annonce
+    - block_visibility_groups
+    - hello
+  theme:
+    - bootstrap
+id: session_2
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: session_block
+settings:
+  id: session_block
+  label: Session
+  provider: hello
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  example_condition:
+    id: example_condition
+    module: session_test
+    negate: null
+    date_expiration: '2018-05-22'
+    context_mapping: {  }

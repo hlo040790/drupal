@@ -1,0 +1,22 @@
+uuid: 631ff4b2-40d1-4e55-8a90-4d57a48210ae
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ive
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: ive_powered
+theme: ive
+region: footer_fifth
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

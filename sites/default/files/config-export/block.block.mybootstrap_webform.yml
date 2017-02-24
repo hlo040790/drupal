@@ -1,0 +1,36 @@
+uuid: 043012fe-9918-4cea-957e-0163e59df110
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - node
+    - webform
+  theme:
+    - mybootstrap
+id: mybootstrap_webform
+theme: mybootstrap
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: visible
+  webform_id: reserver_une_table
+  default_data: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      restaurant: restaurant
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

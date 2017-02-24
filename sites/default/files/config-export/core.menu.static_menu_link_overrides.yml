@@ -1,0 +1,58 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  standard__front_page:
+    menu_name: main
+    parent: ''
+    weight: -50
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__nbre_etoiles__1':
+    menu_name: nbre-etoiles
+    parent: ''
+    enabled: true
+    expanded: true
+    weight: -50
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__nbre_etoiles__2':
+    menu_name: nbre-etoiles
+    parent: ''
+    weight: -49
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__nbre_etoiles__3':
+    menu_name: nbre-etoiles
+    parent: ''
+    weight: -48
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__nbre_etoiles__4':
+    menu_name: nbre-etoiles
+    parent: ''
+    weight: -47
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__nbre_etoiles__5':
+    menu_name: nbre-etoiles
+    parent: ''
+    weight: -46
+    expanded: true
+    enabled: true
+  user__logout:
+    weight: -49
+    parent: ''
+    menu_name: account
+    expanded: false
+    enabled: true
+  user__page:
+    weight: -50
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: fr

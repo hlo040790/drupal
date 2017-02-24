@@ -1,0 +1,21 @@
+uuid: 7ecb9a1e-fd4e-4d36-a1b9-475f12e97f60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_visite_guidee_titre
+    - paragraphs.paragraphs_type.paragraphe_video_
+  module:
+    - text
+id: paragraph.paragraphe_video_.field_visite_guidee_titre
+field_name: field_visite_guidee_titre
+entity_type: paragraph
+bundle: paragraphe_video_
+label: 'Visite guidée titre'
+description: 'Lieu dans l hotel'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

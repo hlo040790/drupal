@@ -1,0 +1,38 @@
+uuid: ecb2ba59-0709-4b10-b25a-32e6caad670b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image_taxo_hotel
+    - taxonomy.vocabulary.types_d_hotel
+  module:
+    - image
+id: taxonomy_term.types_d_hotel.field_image_taxo_hotel
+field_name: field_image_taxo_hotel
+entity_type: taxonomy_term
+bundle: types_d_hotel
+label: 'Image Taxo Hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

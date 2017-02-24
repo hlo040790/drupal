@@ -1,0 +1,30 @@
+uuid: 08a7dcdd-35e8-46c0-9c37-59efb3c5411f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bloc_types_hotel
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - ive
+id: ive_views_block__bloc_types_hotel_block_1
+theme: ive
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:bloc_types_hotel-block_1'
+settings:
+  id: 'views_block:bloc_types_hotel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

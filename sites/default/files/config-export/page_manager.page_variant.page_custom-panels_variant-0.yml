@@ -1,0 +1,65 @@
+uuid: 9a5737e0-b6a8-4261-9dd3-e3dbf67f3e87
+langcode: fr
+status: true
+dependencies:
+  config:
+    - page_manager.page.page_custom
+  module:
+    - panels
+    - system
+id: page_custom-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    5a2d618c-a77a-4a1b-94cc-67d5f57241ae:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
+      region: top-right
+      weight: 0
+      uuid: 5a2d618c-a77a-4a1b-94cc-67d5f57241ae
+      context_mapping: {  }
+    00177103-47a7-4f3e-a6ef-b9e769d64809:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
+      region: top-left
+      weight: 0
+      uuid: 00177103-47a7-4f3e-a6ef-b9e769d64809
+      context_mapping: {  }
+    a91412f2-9f2c-4d77-a541-345376dd91d5:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
+      region: bottom-left
+      weight: 0
+      uuid: a91412f2-9f2c-4d77-a541-345376dd91d5
+      context_mapping: {  }
+    7e9ac3b6-af9e-47e9-be1d-9e3f0c62a958:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
+      region: bottom-right
+      weight: 0
+      uuid: 7e9ac3b6-af9e-47e9-be1d-9e3f0c62a958
+      context_mapping: {  }
+  id: panels_variant
+  uuid: bf961cec-5f0f-425d-99e4-640579bf19b6
+  label: null
+  weight: 0
+  layout: 4squares
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: page_custom-panels_variant-0
+  builder: standard
+page: page_custom
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

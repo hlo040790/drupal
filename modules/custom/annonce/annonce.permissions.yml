@@ -1,0 +1,4 @@
+administer Annonce entity:
+  title: 'administer Annonce entity'
+  description: 'administer Annonce entity.'
+  restrict access: 'administer Annonce entity'

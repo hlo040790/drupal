@@ -1,0 +1,19 @@
+uuid: dd822bf5-2f26-4490-9ab2-90b4c3f4da84
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - link
+id: contact_message.field_6_twebs
+field_name: field_6_twebs
+entity_type: contact_message
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

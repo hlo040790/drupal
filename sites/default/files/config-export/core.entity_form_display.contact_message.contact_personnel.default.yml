@@ -1,0 +1,47 @@
+uuid: 0aa928d1-b15c-4fb3-9664-7a062484dd24
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_personnel
+    - field.field.contact_message.contact_personnel.field_6_twebs
+  module:
+    - link
+id: contact_message.contact_personnel.default
+targetEntityType: contact_message
+bundle: contact_personnel
+mode: default
+content:
+  copy:
+    weight: 50
+  field_6_twebs:
+    weight: 51
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  mail:
+    weight: -40
+  message:
+    type: string_textarea
+    weight: 0
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+  subject:
+    type: string_textfield
+    weight: -10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

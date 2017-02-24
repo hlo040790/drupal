@@ -1,0 +1,109 @@
+uuid: 18e91187-27b5-4bcf-b7d3-44b1ffc318a5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - image.style.max_325x325
+    - node.type.article
+  module:
+    - comment
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      path: modules/contrib/bootstrap_layouts
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          attributes: ''
+          add_layout_class: 1
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_image
+        - langcode
+        - body
+        - addtoany
+        - field_tags
+        - links
+        - comment
+        - reusable_form
+_core:
+  default_config_hash: 1x2VMLBhwpRPa-_Q_6J_ZN4QNazwCmP1dt01Zc-Iors
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  addtoany:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+  comment:
+    type: comment_default
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    settings:
+      image_style: max_325x325
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: '1'
+    label: hidden
+  field_tags:
+    type: entity_reference_label
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  reusable_form:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

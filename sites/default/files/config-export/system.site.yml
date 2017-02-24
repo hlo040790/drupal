@@ -1,0 +1,14 @@
+uuid: 16589462-2432-4531-8b8b-60f8ddabab3c
+name: 'Drupal8 dev'
+mail: lculoto@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

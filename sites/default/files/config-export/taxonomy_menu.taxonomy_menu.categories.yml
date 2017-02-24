@@ -1,0 +1,14 @@
+uuid: 101586f0-8bc8-45af-bbe9-377ceb52bd10
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+    - taxonomy.vocabulary.nombre_d_etoile
+id: categories
+label: Categories
+vocabulary: nombre_d_etoile
+menu: categories
+expanded: true
+depth: 1
+menu_parent: 'categories:menu_link_content:c4e7e118-9601-49dd-bb02-08122a41cac9'

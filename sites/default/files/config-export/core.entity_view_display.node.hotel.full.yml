@@ -1,0 +1,62 @@
+uuid: 41f34498-decb-41e3-9b57-2fc539a0f68a
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.hotel.body
+    - field.field.node.hotel.field_emplacement
+    - field.field.node.hotel.field_image
+    - field.field.node.hotel.field_nombre_d_etoile
+    - field.field.node.hotel.field_par_video_hotel
+    - field.field.node.hotel.field_type_d_hotel
+    - field.field.node.hotel.field_video_hotel
+    - node.type.hotel
+    - responsive_image.styles.photos_hotel
+  module:
+    - geolocation
+    - responsive_image
+    - text
+    - user
+id: node.hotel.full
+targetEntityType: node
+bundle: hotel
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_emplacement:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+  field_image:
+    weight: 3
+    label: inline
+    settings:
+      responsive_image_style: photos_hotel
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+  field_nombre_d_etoile:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_par_video_hotel: true
+  field_type_d_hotel: true
+  field_video_hotel: true
+  langcode: true

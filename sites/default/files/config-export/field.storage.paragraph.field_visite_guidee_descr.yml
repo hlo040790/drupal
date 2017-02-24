@@ -1,0 +1,20 @@
+uuid: 22e61d1c-3bd8-418a-bc68-7eff3e35a8bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_visite_guidee_descr
+field_name: field_visite_guidee_descr
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 6a717cbd-b7f4-4ede-b5b0-bbb909bb7d78
+langcode: en
+status: true
+dependencies: {  }
+id: contact_personnel
+label: 'Contact Responsable'
+recipients:
+  - lculoto@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

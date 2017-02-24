@@ -1,0 +1,26 @@
+uuid: a9c195dd-200b-4a79-8d74-63bd4fc56695
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - search
+  theme:
+    - ive
+id: searchform_2
+theme: ive
+region: sidebar_first
+weight: -13
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: recherche
+  provider: search
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

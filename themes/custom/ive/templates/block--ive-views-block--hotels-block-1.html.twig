@@ -1,0 +1,13 @@
+{% extends "block.html.twig" %}
+
+{% block content %}
+    <fieldset>
+    <legend>Titre</legend>
+   		{{ parent() }}
+  	</fieldset>
+  	<ul>
+  	<li><a href="{{ path('view.hotels.page_1') }}">{{ 'All hotels'|t }}</a></li>
+  	<li><a href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': 5}) }} ">{{ '5 stars hotels'|t }}</a></li>
+  	</ul>
+{% endblock %}
+

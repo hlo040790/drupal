@@ -1,0 +1,35 @@
+uuid: fad45a09-3213-4a16-bac9-e6d1b456bf49
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - mybootstrap
+id: mybootstrap_categories
+theme: mybootstrap
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'system_menu_block:categories'
+settings:
+  id: 'system_menu_block:categories'
+  label: Categories
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /hotels
+    negate: false
+    context_mapping: {  }

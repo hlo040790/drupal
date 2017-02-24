@@ -1,0 +1,18 @@
+uuid: 1edc0d92-9e8c-42f8-8f85-e9a270ce8e87
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Restaurant
+type: restaurant
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,26 @@
+uuid: bf9981b2-9c45-4598-b029-ccbd9a0ee5e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+id: menu_etoiles_visibility
+label: 'Menu etoiles visibility'
+logic: or
+conditions:
+  8587e11d-431c-4eaf-b819-a4857f63d27b:
+    id: request_path
+    pages: "/node/1\r\n"
+    negate: false
+    context_mapping: {  }
+    uuid: 8587e11d-431c-4eaf-b819-a4857f63d27b
+  4ac9a145-df0b-40a3-859d-e6e35d4ab32c:
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 4ac9a145-df0b-40a3-859d-e6e35d4ab32c
+allow_other_conditions: false

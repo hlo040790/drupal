@@ -1,0 +1,26 @@
+uuid: 809a3bd4-a706-401f-8773-3d39474f3917
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - language
+  theme:
+    - mybootstrap
+id: mybootstrap_languageswitcher
+theme: mybootstrap
+region: '-1'
+weight: -12
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

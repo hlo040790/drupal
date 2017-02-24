@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+function email_form_schema(){
+    $schema['email_form'] = array(
+        'description' => 'email base.',
+        'fields' => array(
+            'aid' => array(
+                'description' => 'adresse ID.',
+                'type'        => 'int',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+            ),
+            'email' => array(
+                'description' => 'adresse email.',
+                'type'        => 'text',
+            ),
+        ),
+
+    );
+
+    return $schema;
+
+}

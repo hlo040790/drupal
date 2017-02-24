@@ -1,0 +1,30 @@
+uuid: a5dd600f-7980-478c-8ea7-290ecd06087a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - ive
+id: ive_categories
+theme: ive
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'system_menu_block:categories'
+settings:
+  id: 'system_menu_block:categories'
+  label: Categories
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

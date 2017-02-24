@@ -1,0 +1,28 @@
+uuid: 92c7f609-8414-42ce-a441-5e42d04012a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_touit
+    - media_entity.bundle.tweet
+    - node.type.restaurant
+id: node.restaurant.field_touit
+field_name: field_touit
+entity_type: node
+bundle: restaurant
+label: Touiter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      tweet: tweet
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

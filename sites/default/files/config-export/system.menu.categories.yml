@@ -1,0 +1,8 @@
+uuid: 2d8a42f0-c8dc-4215-8422-2d06f12c8944
+langcode: en
+status: true
+dependencies: {  }
+id: categories
+label: Categories
+description: étoiles
+locked: false

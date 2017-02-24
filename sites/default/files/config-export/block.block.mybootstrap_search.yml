@@ -1,0 +1,22 @@
+uuid: e996b866-aaf9-4f1b-9216-b08a16bdc2d2
+langcode: fr
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mybootstrap
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: mybootstrap_search
+theme: mybootstrap
+region: '-1'
+weight: -11
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Rechercher
+  provider: search
+  label_display: visible
+visibility: {  }

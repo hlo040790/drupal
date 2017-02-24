@@ -1,0 +1,9 @@
+.layout-two-sidebars .main-content {
+     margin-left: 0%; 
+    margin-right: 0%; 
+    width: 100%;
+}
+
+.layout-container {
+    max-width: 100%;
+}

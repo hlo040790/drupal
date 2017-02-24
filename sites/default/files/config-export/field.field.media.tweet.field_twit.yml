@@ -1,0 +1,23 @@
+uuid: 87078e33-87bf-45d0-9f89-62adf452f72f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_twit
+    - media_entity.bundle.tweet
+  module:
+    - link
+id: media.tweet.field_twit
+field_name: field_twit
+entity_type: media
+bundle: tweet
+label: twit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

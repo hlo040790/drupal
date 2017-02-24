@@ -1,0 +1,24 @@
+hello.hello:
+    route_name: hello.hello
+    base_route: hello.hello
+    title: 'hello'
+
+liste_noeud.hello:
+    route_name: liste_noeud.hello
+    base_route: hello.hello
+    title: 'liste'
+
+update_history.hello:
+    route_name: update_history.hello
+    base_route: entity.node.canonical
+    title: 'update history'
+
+hello.form:
+    route_name: hello.form
+    base_route: hello.hello
+    title: 'Calculatrice'
+
+hello.admin:
+    route_name: hello.admin
+    base_route: system.themes_page
+    title: 'couleurs des blocs'
